@@ -1,6 +1,5 @@
 var input = document.getElementById('inputBox');
 var btn = document.getElementById('setAlarm');
-var stop = document.getElementById('stopAlarm');
 var result = document.getElementById('result');
 var audio = new Audio('alarm.mp4');
 
@@ -25,11 +24,5 @@ function alarm(e){
 function ringAlarm(){
     setInterval(() => {
         audio.play();
-    }, 1000);
-}
-
-function stopAlarm(){
-    setInterval(() => {
-        audio.pause();
     }, 1000);
 }
